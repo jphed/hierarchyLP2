@@ -47,13 +47,13 @@ class Celular(DispositivoElectronico):
         self.__precio = precio
 
     def on(self):
-        print("Prendiendo...")
+        return f"Prendiendo..."
 
     def off(self):
-        print("Apagando...")
+        return "apagando..."
 
     def llamar(self):
-        print("Llamando...")
+        return "Llamando..."
 
     def __str__(self) -> str:
         return f"{super().__str__()}\nPrecio: {self.precio}"
@@ -77,10 +77,10 @@ class Television(DispositivoElectronico):
         self.__canales = canales
 
     def on(self):
-        print("Prendiendo...")
+        return f"Prendiendo..."
 
     def off(self):
-        print("Apagando...")
+        return "apagando..."
 
     def verNetflix(self):
         print("Viendo netflix")
